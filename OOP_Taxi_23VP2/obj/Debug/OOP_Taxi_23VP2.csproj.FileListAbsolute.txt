@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\OOP_Taxi_23VP2\OOP_Taxi_23VP2\bin\Debug\OOP_Taxi_23VP2.exe.config
+C:\Users\User\source\repos\OOP_Taxi_23VP2\OOP_Taxi_23VP2\bin\Debug\OOP_Taxi_23VP2.exe
+C:\Users\User\source\repos\OOP_Taxi_23VP2\OOP_Taxi_23VP2\bin\Debug\OOP_Taxi_23VP2.pdb
+C:\Users\User\source\repos\OOP_Taxi_23VP2\OOP_Taxi_23VP2\obj\Debug\OOP_Taxi_23VP2.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\OOP_Taxi_23VP2\OOP_Taxi_23VP2\obj\Debug\OOP_Taxi_23VP2.Form1.resources
+C:\Users\User\source\repos\OOP_Taxi_23VP2\OOP_Taxi_23VP2\obj\Debug\OOP_Taxi_23VP2.Properties.Resources.resources
+C:\Users\User\source\repos\OOP_Taxi_23VP2\OOP_Taxi_23VP2\obj\Debug\OOP_Taxi_23VP2.csproj.GenerateResource.cache
+C:\Users\User\source\repos\OOP_Taxi_23VP2\OOP_Taxi_23VP2\obj\Debug\OOP_Taxi_23VP2.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\OOP_Taxi_23VP2\OOP_Taxi_23VP2\obj\Debug\OOP_Taxi_23VP2.exe
+C:\Users\User\source\repos\OOP_Taxi_23VP2\OOP_Taxi_23VP2\obj\Debug\OOP_Taxi_23VP2.pdb
