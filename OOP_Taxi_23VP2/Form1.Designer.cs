@@ -84,6 +84,7 @@
             this.Status});
             this.dataGridView1.Location = new System.Drawing.Point(25, 34);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(735, 620);
@@ -94,11 +95,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(1022, 102);
+            this.label1.Location = new System.Drawing.Point(936, 101);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 20);
+            this.label1.Size = new System.Drawing.Size(310, 20);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Фильтровать";
+            this.label1.Text = "Фильтровать по статусу заказа";
             // 
             // label4
             // 
@@ -183,6 +184,7 @@
             // 
             // checkedListBox1
             // 
+            this.checkedListBox1.BackColor = System.Drawing.Color.LightGray;
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Items.AddRange(new object[] {
             "Заказан",
