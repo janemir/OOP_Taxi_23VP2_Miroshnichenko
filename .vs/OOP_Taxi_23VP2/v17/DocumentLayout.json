@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\OOP_Taxi_23VP2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{65688DA5-0F06-49D5-BCF0-C736C3138547}|OOP_Taxi_23VP2\\OOP_Taxi_23VP2.csproj|C:\\Users\\User\\source\\repos\\OOP_Taxi_23VP2\\oop_taxi_23vp2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{65688DA5-0F06-49D5-BCF0-C736C3138547}|OOP_Taxi_23VP2\\OOP_Taxi_23VP2.csproj|c:\\users\\user\\source\\repos\\oop_taxi_23vp2\\oop_taxi_23vp2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{65688DA5-0F06-49D5-BCF0-C736C3138547}|OOP_Taxi_23VP2\\OOP_Taxi_23VP2.csproj|solutionrelative:oop_taxi_23vp2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65688DA5-0F06-49D5-BCF0-C736C3138547}|OOP_Taxi_23VP2\\OOP_Taxi_23VP2.csproj|c:\\users\\user\\source\\repos\\oop_taxi_23vp2\\oop_taxi_23vp2\\splashscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{65688DA5-0F06-49D5-BCF0-C736C3138547}|OOP_Taxi_23VP2\\OOP_Taxi_23VP2.csproj|C:\\Users\\User\\source\\repos\\OOP_Taxi_23VP2\\oop_taxi_23vp2\\splashscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{65688DA5-0F06-49D5-BCF0-C736C3138547}|OOP_Taxi_23VP2\\OOP_Taxi_23VP2.csproj|solutionrelative:oop_taxi_23vp2\\splashscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -88,8 +88,7 @@
               "RelativeToolTip": "OOP_Taxi_23VP2\\SplashScreen.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T17:07:11.44Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T17:07:11.44Z"
             },
             {
               "$type": "Document",
