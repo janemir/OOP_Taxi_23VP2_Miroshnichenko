@@ -8,15 +8,25 @@ namespace OOP_Taxi_23VP2
 {
     internal static class Program
     {
-        /// <summary>
-        /// Главная точка входа для приложения.
-        /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            using (SplashScreen splash = new SplashScreen())
+            {
+
+                if (splash.ShowDialog() == DialogResult.OK)
+                {
+                    Application.Run(new Form1());
+                }
+                else
+                {
+                    Application.Exit();
+                }
+            }
         }
     }
 }
+

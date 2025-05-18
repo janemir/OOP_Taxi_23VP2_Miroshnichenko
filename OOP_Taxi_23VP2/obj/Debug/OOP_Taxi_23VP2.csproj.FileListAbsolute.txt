@@ -8,3 +8,4 @@ C:\Users\User\source\repos\OOP_Taxi_23VP2\OOP_Taxi_23VP2\obj\Debug\OOP_Taxi_23VP
 C:\Users\User\source\repos\OOP_Taxi_23VP2\OOP_Taxi_23VP2\obj\Debug\OOP_Taxi_23VP2.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\OOP_Taxi_23VP2\OOP_Taxi_23VP2\obj\Debug\OOP_Taxi_23VP2.exe
 C:\Users\User\source\repos\OOP_Taxi_23VP2\OOP_Taxi_23VP2\obj\Debug\OOP_Taxi_23VP2.pdb
+C:\Users\User\source\repos\OOP_Taxi_23VP2\OOP_Taxi_23VP2\obj\Debug\OOP_Taxi_23VP2.SplashScreen.resources
