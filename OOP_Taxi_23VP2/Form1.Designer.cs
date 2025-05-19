@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DriverInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CarInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -60,10 +64,7 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.DriverInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CarInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -90,16 +91,44 @@
             this.dataGridView1.Size = new System.Drawing.Size(735, 620);
             this.dataGridView1.TabIndex = 0;
             // 
+            // DriverInfo
+            // 
+            this.DriverInfo.HeaderText = "ФИО водителя";
+            this.DriverInfo.MinimumWidth = 6;
+            this.DriverInfo.Name = "DriverInfo";
+            this.DriverInfo.Width = 125;
+            // 
+            // CarInfo
+            // 
+            this.CarInfo.HeaderText = "Гос. номер автомобиля ";
+            this.CarInfo.MinimumWidth = 6;
+            this.CarInfo.Name = "CarInfo";
+            this.CarInfo.Width = 125;
+            // 
+            // PhoneNumber
+            // 
+            this.PhoneNumber.HeaderText = "Номер телефона клиента";
+            this.PhoneNumber.MinimumWidth = 6;
+            this.PhoneNumber.Name = "PhoneNumber";
+            this.PhoneNumber.Width = 125;
+            // 
+            // Status
+            // 
+            this.Status.HeaderText = "Статус заказа";
+            this.Status.MinimumWidth = 6;
+            this.Status.Name = "Status";
+            this.Status.Width = 125;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(936, 101);
+            this.label1.Location = new System.Drawing.Point(792, 110);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(310, 20);
+            this.label1.Size = new System.Drawing.Size(175, 20);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Фильтровать по статусу заказа";
+            this.label1.Text = "Выберите статус ";
             // 
             // label4
             // 
@@ -190,7 +219,7 @@
             "Заказан",
             "В пути",
             "Завершен"});
-            this.checkedListBox1.Location = new System.Drawing.Point(1036, 134);
+            this.checkedListBox1.Location = new System.Drawing.Point(1033, 110);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.checkedListBox1.Size = new System.Drawing.Size(104, 72);
@@ -290,7 +319,7 @@
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button8.Location = new System.Drawing.Point(473, 182);
+            this.button8.Location = new System.Drawing.Point(482, 181);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(75, 23);
             this.button8.TabIndex = 25;
@@ -326,7 +355,7 @@
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button9.Location = new System.Drawing.Point(473, 182);
+            this.button9.Location = new System.Drawing.Point(482, 182);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(75, 23);
             this.button9.TabIndex = 29;
@@ -390,33 +419,15 @@
             this.label10.TabIndex = 26;
             this.label10.Text = "Гос. номер автомобиля";
             // 
-            // DriverInfo
+            // button5
             // 
-            this.DriverInfo.HeaderText = "ФИО водителя";
-            this.DriverInfo.MinimumWidth = 6;
-            this.DriverInfo.Name = "DriverInfo";
-            this.DriverInfo.Width = 125;
-            // 
-            // CarInfo
-            // 
-            this.CarInfo.HeaderText = "Гос. номер автомобиля ";
-            this.CarInfo.MinimumWidth = 6;
-            this.CarInfo.Name = "CarInfo";
-            this.CarInfo.Width = 125;
-            // 
-            // PhoneNumber
-            // 
-            this.PhoneNumber.HeaderText = "Номер телефона клиента";
-            this.PhoneNumber.MinimumWidth = 6;
-            this.PhoneNumber.Name = "PhoneNumber";
-            this.PhoneNumber.Width = 125;
-            // 
-            // Status
-            // 
-            this.Status.HeaderText = "Статус заказа";
-            this.Status.MinimumWidth = 6;
-            this.Status.Name = "Status";
-            this.Status.Width = 125;
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.button5.Location = new System.Drawing.Point(1214, 110);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(167, 35);
+            this.button5.TabIndex = 24;
+            this.button5.Text = "Применить фильтр";
+            this.button5.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -424,6 +435,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
             this.ClientSize = new System.Drawing.Size(1414, 686);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.numericUpDown1);
@@ -491,6 +503,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn CarInfo;
         private System.Windows.Forms.DataGridViewTextBoxColumn PhoneNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn Status;
+        private System.Windows.Forms.Button button5;
     }
 }
 
