@@ -169,7 +169,7 @@ namespace OOP_Taxi_23VP2
             }
         }
 
-        private List<Order> LoadOrdersFromDatabase()
+        private void LoadOrdersFromDatabase()
         {
             var query = "select driver_name, car_number, client_phone, order_status from orders";
             var orders = new List<Order>();
@@ -188,7 +188,12 @@ namespace OOP_Taxi_23VP2
                 });
             }
 
-            return orders.ToList();
+            dataGridView1.DataSource = orders.ToList();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
