@@ -14,17 +14,14 @@ namespace OOP_Taxi_23VP2
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            using (SplashScreen splash = new SplashScreen())
+            using SplashScreen splash = new SplashScreen();
+            if (splash.ShowDialog() == DialogResult.OK)
             {
-
-                if (splash.ShowDialog() == DialogResult.OK)
-                {
-                    Application.Run(new Form1());
-                }
-                else
-                {
-                    Application.Exit();
-                }
+                Application.Run(new Form1());
+            }
+            else
+            {
+                Application.Exit();
             }
         }
     }
