@@ -23,12 +23,16 @@
         #region Код, автоматически созданный конструктором форм Windows
 
         /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
+        /// Требуемый метод для поддержки конструктора — не изменяйте 
+        /// содержимое этого метода с помощью редактора кода.
         /// </summary>
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DriverInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CarInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -60,6 +64,7 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -71,7 +76,13 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.LightSlateGray;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DriverInfo,
+            this.CarInfo,
+            this.PhoneNumber,
+            this.Status});
             this.dataGridView1.Location = new System.Drawing.Point(25, 34);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
@@ -96,7 +107,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(18, 18);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 17);
+            this.label4.Size = new System.Drawing.Size(103, 16);
             this.label4.TabIndex = 4;
             this.label4.Text = "ФИО водителя";
             // 
@@ -105,7 +116,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(18, 54);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(163, 17);
+            this.label5.Size = new System.Drawing.Size(158, 16);
             this.label5.TabIndex = 5;
             this.label5.Text = "Гос. номер автомобиля";
             // 
@@ -114,7 +125,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(18, 91);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(179, 17);
+            this.label6.Size = new System.Drawing.Size(176, 16);
             this.label6.TabIndex = 6;
             this.label6.Text = "Номер телефона клиента";
             // 
@@ -123,7 +134,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(18, 125);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(102, 17);
+            this.label7.Size = new System.Drawing.Size(103, 16);
             this.label7.TabIndex = 7;
             this.label7.Text = "Статус заказа";
             // 
@@ -206,7 +217,6 @@
             this.button3.TabIndex = 16;
             this.button3.Text = "Удалить БД";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -218,7 +228,6 @@
             this.button4.TabIndex = 17;
             this.button4.Text = "Сохранить в файл";
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button7
             // 
@@ -335,7 +344,7 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(20, 125);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(102, 17);
+            this.label12.Size = new System.Drawing.Size(103, 16);
             this.label12.TabIndex = 28;
             this.label12.Text = "Статус заказа";
             // 
@@ -351,7 +360,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(17, 17);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(112, 17);
+            this.label9.Size = new System.Drawing.Size(106, 16);
             this.label9.TabIndex = 25;
             this.label9.Text = "ФИО водителя ";
             // 
@@ -367,7 +376,7 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(20, 91);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(179, 17);
+            this.label11.Size = new System.Drawing.Size(176, 16);
             this.label11.TabIndex = 27;
             this.label11.Text = "Номер телефона клиента";
             // 
@@ -376,9 +385,19 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(20, 56);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(163, 17);
+            this.label10.Size = new System.Drawing.Size(158, 16);
             this.label10.TabIndex = 26;
             this.label10.Text = "Гос. номер автомобиля";
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.button5.Location = new System.Drawing.Point(1214, 110);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(167, 35);
+            this.button5.TabIndex = 24;
+            this.button5.Text = "Применить фильтр";
+            this.button5.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -386,6 +405,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
             this.ClientSize = new System.Drawing.Size(1414, 686);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.numericUpDown1);
@@ -412,6 +432,7 @@
             this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
@@ -448,6 +469,11 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DriverInfo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CarInfo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PhoneNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
+        private System.Windows.Forms.Button button5;
     }
 }
 
