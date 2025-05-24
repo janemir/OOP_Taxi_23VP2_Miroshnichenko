@@ -1,25 +1,16 @@
-﻿using OOP_Taxi_23VP2;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Npgsql;
+using OOP_Taxi_23VP2.Models;
+using OOP_Taxi_23VP2.Mappers;
 
 namespace OOP_Taxi_23VP2
 {
-    public class Order
-    {
-        public string DriverName { get; set; }
-        public string CarNumber { get; set; }
-        public string ClientPhone { get; set; }
-        public string OrderStatus { get; set; }
-    }
-
     public partial class Form1 : Form
     {
         private const string _postgresConn = $"Host=localhost;Port=5432;Username=postgres;Password=postgres;Database={dbName}";
@@ -62,7 +53,7 @@ namespace OOP_Taxi_23VP2
                 using var cmd = new NpgsqlCommand($"create database \"{dbName}\"", conn);
                 await cmd.ExecuteNonQueryAsync();
 
-                using var query = new NpgsqlCommand($"create table if not exists orders (id int, driver_name varchar(255), car_number varchar(255), client_phone varchar(14), order_status varchar(10))", conn);
+                using var query = new NpgsqlCommand($"create table if not exists taxi (id serial, driver_name varchar(255), car_number varchar(255), client_phone varchar(14), order_status varchar(10))", conn);
                 await query.ExecuteNonQueryAsync();
                 
                 MessageBox.Show($"База «{dbName}» успешно создана!");
@@ -171,29 +162,51 @@ namespace OOP_Taxi_23VP2
 
         private void LoadOrdersFromDatabase()
         {
-            var query = "select driver_name, car_number, client_phone, order_status from orders";
-            var orders = new List<Order>();
+            var query = "select id, driver_name, car_number, client_phone, order_status from taxi";
+            var info = new List<Order>();
             using var conn = new NpgsqlConnection(_postgresConn);
             conn.Open();
             using var cmd = new NpgsqlCommand(query, conn);
             using var reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-                orders.Add(new Order
+                info.Add(OrderMapper.MapToOrder(new DbOrder
                 {
-                    DriverName = reader.GetString(0),
-                    CarNumber = reader.GetString(1),
-                    ClientPhone = reader.GetString(2),
-                    OrderStatus = reader.GetString(3)
-                });
+                    Id = reader.GetInt32(0),  
+                    DriverName = reader.GetString(1),
+                    CarNumber = reader.GetString(2),
+                    ClientPhone = reader.GetString(3),
+                    OrderStatus = reader.GetString(4)
+                }));
             }
-
-            dataGridView1.DataSource = orders.ToList();
+            
+            conn.Close();
+            dataGridView1.DataSource = info.ToList();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            var carNumber = textBox5.Text;
+            var query = $"select * from taxi where car_number = '{carNumber}'";
+            var info = new List<Order>();
+            using var conn = new NpgsqlConnection(_postgresConn);
+            conn.Open();
+            using var cmd = new NpgsqlCommand(query, conn);
+            using var reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                info.Add(OrderMapper.MapToOrder(new DbOrder
+                {
+                    Id = reader.GetInt32(0),  
+                    DriverName = reader.GetString(1),
+                    CarNumber = reader.GetString(2),
+                    ClientPhone = reader.GetString(3),
+                    OrderStatus = reader.GetString(4)
+                }));
+            }
+            
+            conn.Close();
+            dataGridView1.DataSource = info.ToList();
         }
     }
 }

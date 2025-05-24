@@ -50,4 +50,4 @@ C:\Users\user\Documents\my\OOP_Taxi_23VP2_Miroshnichenko\OOP_Taxi_23VP2\bin\Debu
 C:\Users\user\Documents\my\OOP_Taxi_23VP2_Miroshnichenko\OOP_Taxi_23VP2\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\user\Documents\my\OOP_Taxi_23VP2_Miroshnichenko\OOP_Taxi_23VP2\bin\Debug\System.ValueTuple.xml
 C:\Users\user\Documents\my\OOP_Taxi_23VP2_Miroshnichenko\OOP_Taxi_23VP2\obj\Debug\OOP_Taxi.A5C42A0F.Up2Date
-C:\Users\user\Documents\my\OOP_Taxi_23VP2_Miroshnichenko\OOP_Taxi_23VP2\obj\Debug\OOP_Taxi_23VP2.Order.resources
+C:\Users\user\Documents\my\OOP_Taxi_23VP2_Miroshnichenko\OOP_Taxi_23VP2\obj\Debug\OOP_Taxi_23VP2.Form1.resources
